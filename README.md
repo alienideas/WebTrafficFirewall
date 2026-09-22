@@ -100,31 +100,9 @@ Inserts the custom chain into the main INPUT chain (only once)
 
 Supported Firewalls
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FirewallSupport LevelBehavioriptablesFullCreates a custom chain and applies DROP rulesnftablesFullCreates a dedicated table/chain and applies drop rulesufwBest effortAdds ufw deny from rules for each IP
+Firewall Support Level
+Behavior iptables Full
+Creates a custom chain and applies DROP rulesnftablesFullCreates a dedicated table/chain and applies drop rulesufwBest effortAdds ufw deny from rules for each IP
 
 Safety Notes
 
