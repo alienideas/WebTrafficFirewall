@@ -39,36 +39,6 @@ Only uses the uncommented CIDRs
 
 How it blocks (depending on firewall)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-FirewallWhat it doesFull Blackout?NotesiptablesCreates chain → Drops all traffic from listed IPsYesBest methodnftablesCreates table/chain → Drops all trafficYesModern methodufwRuns ufw deny from IP for each IPYes (best effort)Harder to clean old rules
-
 Important Behavior
 
 Established connections are allowed first (ESTABLISHED,RELATED). This prevents breaking already open connections.
@@ -78,31 +48,7 @@ It inserts its chain at the top of the INPUT chain so the blackout rules are eva
 
 Limitations
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-SituationResultShared HostingScript exits safely (no permission)VPS / DedicatedFull blackout worksAlready active connectionsUsually stay alive (because of ESTABLISHED rule)Removing a countryYou must re-run the script after commenting the IPs
+Removing a countryYou must re-run the script after commenting the IPs
 
 Summary
 This script is designed to:
